@@ -381,6 +381,21 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
+	 * Adds given Balls to the GameArena.
+	 * Once Balls are added, they will automatically appear on the window.
+	 * 
+	 * @param bs the array of Ball objects to be added to the GameArena.
+	 * @param index the amount of Ball objects to be added to the GameArena.
+	 */
+	public void addBalls(Ball[] bs, int index)
+	{
+		for(int i = 0; i < index; i++)
+		{
+			addBall(bs[i]);
+		}
+	}
+
+	/**
 	 * Adds a given Rectangle to the GameArena. 
 	 * Once a rectangle is added, it will automatically appear on the window. 
 	 *
